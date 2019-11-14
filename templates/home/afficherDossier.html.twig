@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage de {{ nomDuDossier }}{% endblock %}
+
+{% block body %}
+    <h1>Affichage de {{ nomDuDossier }}</h1>
+
+
+    <div class="example-wrapper row ">
+        {% for fichier in fichiers %}
+            {% include "home/_chatons.html.twig" %}
+        {% endfor %}
+    </div>
+
+<br>
+
+    <h2>Ajouter un chaton</h2>
+    {{ form(formulaire) }}
+{% endblock %}

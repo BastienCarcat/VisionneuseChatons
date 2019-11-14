@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block body %}
+    <h1>Homepage</h1>
+{#{{  dump(dossiers) }}#}
+    {#commentaire#}
+   <!-- <ul>
+        {#{% for dossier in dossiers %}#}
+            <li><a href="{#{{ path ("dossier", {"nomDuDossier":dossier.filename}) }}">{{ dossier.filename }}#}</a></li>
+        {#{% endfor %}#}
+    </ul>-->
+{{ form(formIndex) }}
+{% endblock %}
